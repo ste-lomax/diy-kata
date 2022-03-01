@@ -1,3 +1,7 @@
 const { humanCatDogYears } = require("../src");
 
-// Look Ma, no handlebars!!!
+describe("returns human cat dog years", () => {
+    it("returns human cat dog years", () => {
+        expect(humanCatDogYears(10)).toEqual([10, 56, 64])
+    })
+});
